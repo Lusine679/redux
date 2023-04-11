@@ -1,0 +1,190 @@
+body {
+	/* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+	background: linear-gradient(to right, #94525c, #14aad7);
+}
+
+
+.checked-toDo{
+	color:red;
+	text-decoration: line-through;
+}
+.unchecked-toDo{
+	color: white;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content button {
+	padding: 12px 16px;
+	display: block;
+	width: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+#main-container{
+	margin: 20px auto;
+	width: 500px;
+	/* border: 1px solid black; */
+}
+
+/* header's style */
+#header{
+	/* border: 1px solid black; */
+	display: flex;
+}
+
+.input-wrapper{
+	width: 450px;
+	background-color:#fff;
+	padding:30px;
+	box-shadow: 0px 0px 10px rgb(0,0,0,0.1);
+	border-radius:6px;
+	margin-right: 10px;
+}
+.input-wrapper .input-data{
+	
+	/* height:40px; */
+	/* width: 100%; */
+	/* position: relative; */
+}
+.input-wrapper .input-data input{
+	height:100%;
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid silver;
+	outline:none;
+	letter-spacing: 1px;
+}
+
+
+input{
+	font-size:18px;
+}
+
+input::-webkit-input-placeholder {
+    color: #999;
+}
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+/* Firefox < 19 */
+input:-moz-placeholder {
+    color: #999;
+}
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: #999;
+}
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    color: #999;
+}
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+
+/* style for button add */
+.btn {
+	box-shadow:inset 0px 1px 0px 0px #e184f3;
+	background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+	background-color:#c123de;
+	border-radius:6px;
+	border:1px solid #a511c0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #9b14b3;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+	background-color:#a20dbd;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* style for to do items */
+#toDo-list{
+	margin-top: 20px;
+}
+
+.toDo-item{
+	/* border:1px solid black; */
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	border-radius: 6px;
+	margin-bottom: 8px;
+	background-color: rgba(249, 249, 249, 0.161);
+}
+
+.btn-del{
+	margin-right: 10px;
+}
+.btn-save{
+	margin-right: 10px;
+}
+.btn-save, .btn-cancel{
+	font-size: 14px;
+	
+}
+
+.btns-del-edit{
+	display: flex;
+}
+
+
+#toDo-name{
+	/* width: 100%; */
+	color: white;
+	line-height: 2em;
+	font-size: 18px;
+	letter-spacing: 1px;
+	/* pointer-events: none; */
+}
+#toDo-name > span{
+	pointer-events: auto;
+}
+
+
+#edit-input{
+	height:100%;
+	width: 100%;
+	border: none;
+	outline:none;
+	padding: 8px;
+	font-size: 16px;
+	margin-right: 10px;
+	border-radius: 6px;
+}
+
+

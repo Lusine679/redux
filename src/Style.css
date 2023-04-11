@@ -1,0 +1,17 @@
+.MainDiv{
+  border: 1px solid black;
+  width: 50vh;
+  margin: auto;
+  margin-top: 50vh;
+  text-align: center;
+}
+.toDos{
+  border: 1px solid black;
+  height: 50px;
+  padding-top: 2vh;
+  margin: 20px;
+}
+
+.dltBtn{
+  float: right;
+}
